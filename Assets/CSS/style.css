@@ -1,0 +1,67 @@
+*{
+    font-family: sans-serif;
+    font-size: 1rem;
+}
+
+/* Custom properties */
+:root {
+    --dark: rgb(0, 0, 0);
+    --light: rgb(82, 78, 78);
+    --navlight: rgb(136, 173, 214);
+    --navdark: rgb(60, 67, 75);
+}
+
+.header {
+    height: 70px;
+    width: 100%;
+    font-size: 1.75rem;
+    color: var(--navlink);
+    background-color: var(--navdark);    
+}
+
+.header h1 {
+    display: inline-block;
+    min-width: 30%;
+    margin: 15px 0px;
+    padding: 5px;
+    /* how to make margin 10% within the header element */
+    text-align: right;
+    font-weight: bold;
+    background-color: var(--navlight);
+    color: var--(--navdark);
+}
+
+/* ensure that it does not go to a new line when making the screen smaller - flex wrap?*/
+.header nav {
+    float: right;
+    margin: 15px;
+    text-align: right;
+    /* flex-wrap: nowrap; */
+}
+
+.header li {
+    display: inline-block;
+    margin-right: 25px;
+}
+
+/* when selecting .header, why does font size not apply to a tag? (b/c of default settings, shouldn't reset sheet take over? */
+.header a {
+    color: var(--navlight);
+    font-size: 1.75rem;
+}
+
+figure{
+    border: 2px solid black;
+    width: 100px;
+    height: 100px;
+}
+
+/* question - how to push image up? */
+.backgroundimg {
+    height: 200px;
+    width: 100%;
+    margin-bottom: 25px;
+    background-image: url("../Images/financial-blue-flat-business-background-image_194252.jpg");
+    background-size: cover;
+    background-position: center;
+}
