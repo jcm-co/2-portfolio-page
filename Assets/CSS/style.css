@@ -28,7 +28,7 @@
     text-align: right;
     font-weight: bold;
     background-color: var(--navlight);
-    color: var--(--navdark);
+    color: var(--navdark);
 }
 
 /* ensure that it does not go to a new line when making the screen smaller - flex wrap?*/
@@ -50,18 +50,89 @@
     font-size: 1.75rem;
 }
 
-figure{
-    border: 2px solid black;
-    width: 100px;
-    height: 100px;
-}
-
 /* question - how to push image up? */
 .backgroundimg {
     height: 200px;
     width: 100%;
     margin-bottom: 25px;
     background-image: url("../Images/financial-blue-flat-business-background-image_194252.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+h2 {
+    float: right;
+    background-color: var(--navlight);
+    color: var(--navdark);
+    margin: 150px 20px 20px;
+    padding: 10px;
+}
+
+/* inline-flex to keep a flex container display inline
+.sidemenu {
+    display: inline-block;
+    border-right: var(--navlight) 3px bold;
+}
+
+.AboutMeText {
+    float: right;} */
+
+/* box vanishes when I apply a class (.sidenav), it is accurate when I apply it to the aside notion */
+aside{
+    display: inline-block;
+    width: 20%;
+    height: 200px;
+    border: black 2px solid;
+}
+
+aside h3 {
+    color: var(--navlight);
+}
+
+.AboutMeText{
+    display: block;
+    float: right;
+    width: 80%;
+    height: 200px;
+    border: black 2px solid;
+
+}
+
+.prio-project{
+    display: block;
+    float: right;
+    width: 80%;
+    height: 200px;
+    border: black 2px solid;
+}
+
+.project1{
+    height: 200px;
+    width: 80%;
+    float: right;
+    background-image: url("../Images/css_cheat_sheet.jpeg");
+    background-size: cover;
+    background-position: center;
+}
+
+.non-prio-poject{
+
+}
+
+.project2{
+    height: 100px;
+    width: 40%;
+    float: right;
+    background-image: url("../Images/html.jpeg");
+    background-size: cover;
+    background-position: center;
+}
+
+.project3{
+    height: 100px;
+    width: 40%;
+    float: right;
+    background-image: url("../Images/css.jpeg");
     background-size: cover;
     background-position: center;
 }
