@@ -12,16 +12,15 @@
 }
 
 .header {
+    display: flex;
     height: 100px;
-    width: 100%;
     font-size: 1.75rem;
     color: var(--navlink);
     background-color: var(--navdark);    
 }
 
 .header h1 {
-    display: inline-block;
-    min-width: 30%;
+    flex: 30%;
     margin: 30px 0px;
     padding: 5px;
     text-align: right;
@@ -32,7 +31,7 @@
 
 /* When using a class "topnav" instead of nav, it breaks. Why? */
 .header nav{
-    float: right;
+    flex: 70%;
     margin: 30px;
     padding: 5px;
     text-align: right;
@@ -56,7 +55,7 @@
     margin-bottom: 10px;
 }
 
-.textbox {
+.textbox{
     float: right;
     background-color: var(--navlight);
     color: var(--navdark);
@@ -72,17 +71,35 @@
   }
 
 .nav-left {
-    flex: 30%;
+    flex: 20%;
     padding: 20px;
     flex-wrap: wrap;
     border-right: var(--navlight) 4px solid;
     margin: 10px;
+    text-align: right;
   }
 
 .nav-right {
-    flex: 70%;
+    flex: 80%;
     padding: 20px;
   } 
+
+/* TO DO put image to right of text */
+
+.nav-right p{
+    width: 60%;
+}
+
+/* TO DO - move image to the right */
+/* .nav-right headshot{
+    width: 20%;
+} */
+
+img{ 
+    border-radius: 50%;
+    width: 13%;
+    margin: 10px;
+}
 
   /* More */
 
@@ -91,77 +108,57 @@
     font-size: 1.75rem;
 }
 
-/* 
-.AboutMeText{
-    display: block;
-    float: right;
-    width: 80%;
-    height: 150px;
+.nav-right p{
+    display: block;   
+    /* height: 150px; */
     color: var(--light);
-    padding: 30px;
 }
 
-.MyWork {
-    flex: 30%;
-    height: 800px;
-    padding-right: 5px;
-    margin: 10px 0px;
-    border-right: var(--navlight) 4px solid;
-}
-
-.MyWork h3 {
-    position: absolute;
-    top: 20%;
-    left: 50%;
-    color: var(--navlight);
-    font-size: 1.75rem;
-}
-
-.projects{
-    display: 70%;   
-    margin: 2% 5%;
-    border-radius: 15px 50px 30px;
-}
-
-.CheatSheet{
+.project{
     display: inline-block;
+    width: 43%;
     height: 200px;
-    width: 70%;
-    margin-left: 5%;
-    margin-right: 5%;
+    border-radius: 15px 50px 30px;
+    background-size: cover;
+    background-position: center;
+    margin: 2%;
     background-image: url("../Images/CSS_image.jpeg");
-    background-size: cover;
-    background-position: center;
 }
 
-.html{
-    display: flex;
-    float: right;
-    background-image: url("../Images/html.jpeg");
-    background-size: cover;
-    background-position: center;
+.cheat-sheet{
+    width: 90%;
 }
 
-.JavaScript{
-    background-image: url("../Images/html.jpeg");
-    background-size: cover;
-    background-position: center;
-}
+/* TO DO: fix footer to right section */
 
-
-.footer nav{
-    float: right;
+.footer nav-right{
+    /* flex: nowrap; */
     margin: 30px;
     padding: 5px;
     text-align: right;
 }
 
-.footer li {
+.nav-right li {
     display: inline-block;
     margin-right: 25px;
 }
 
-.footer a {
+.nav-right a {
     color: var(--navlight);
     font-size: 1.75rem;
-} */
+}
+
+/* Tablets - */
+@media screen and (max-width: 992px) {
+    }
+  }
+  
+  /* Large smartphones - */
+  @media screen and (max-width: 768px) {
+    
+  }
+  
+  /* Small smartphones*/
+  @media screen and (max-width: 576px) {
+    
+  }

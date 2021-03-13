@@ -16,16 +16,16 @@
             <ul>
                 <li> 
                     <!-- # to connect it to a class -->
-                    <a href="blank">About Me</a>
+                    <a href="javascript:alert('Hello, I am Jean-Christophe!');">About Me</a>
                 </li>
                 <li> 
-                    <a href="blank">My Work</a>
+                    <a href="#my-work">My Work</a>
                 </li>
                 <li> 
-                    <a href="blank">Contact Me</a>
+                    <a href="#contact-me">Contact Me</a>
                 </li>
                 <li> 
-                    <a href="blank">Resume</a>
+                    <a href="https://www.linkedin.com/in/jcmignon/" target="_blank">Resume</a>
                 </li>
             </ul>
         </nav>
@@ -43,32 +43,41 @@
             
             <section class="nav-right">
                 <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
-            </section>        
+                <div class="headshot">
+                    <img src="https://media-exp1.licdn.com/dms/image/C5103AQERBtxcc-jLfA/profile-displayphoto-shrink_200_200/0/1521067437119?e=1620864000&v=beta&t=sdEwIOjjGAtuTMxllpw8wWBRELNbF4t2kykblmMxuVQ" alt="Jean-Christophe Mignon">
+                </div>
+            </section>
         </section>
 
-        <section class="nav-section">
+        <section class="nav-section" id="my-work">
             <aside class="nav-left">
                 <h3>My Work</h3>
             </aside>
             
             <div class="nav-right">
-                <figure class="CheatSheet">
-                    <!-- apply to h4 tag, investigate. class="textbox" -->
-                    <h4>CSS cheat sheet</h4>
+                <!-- TO DO: text box is clickable, not yet image. Textbox got restyled. -->
+                <a href="https://jcm-co.github.io/2-mini-project-CSS/">
+                    <figure class ="project cheat-sheet">
+                    <h4 class="textbox">CSS cheat sheet</h4>
+                </a>               
                 </figure> </figure>
-                <figure class="html">
-                    <!-- apply to h4 tag, investigate. class="textbox" -->
-                    <h4>Intro to HTML</h4>
+                <figure class="project">
+                    <h4 class="textbox">Intro to HTML</h4>
                 </figure>      
-                <figure class="JavaScript">
-                    <!-- apply to h4 tag, investigate. class="textbox" -->
-                    <h4>Intro to JavaScript</h4>
+                <figure class="project">
+                    <h4 class="textbox">Intro to JavaScript</h4>
+                </figure>  
+                <figure class="project">
+                    <h4 class="textbox">example</h4>
+                </figure>  
+                <figure class="project">
+                    <h4 class="textbox">example2</h4>
                 </figure>  
             </div>
         </section>
     </main>
 
-    <footer>
+    <footer id="contact-me">
         
         <aside class="nav-left">
             <h3>Contact Me</h3>
@@ -79,16 +88,16 @@
         <nav class="nav-right">
             <ul class="nav-right">
                 <li class="nav-right"> 
-                    <a class="nav-right" href="blank">555.555.555</a>
+                    <a class="nav-right" href="tel:+4733378901">555.555.555</a>
                 </li>
                 <li> 
-                    <a class="nav-right" href="blank">test@test.com</a>
+                    <a class="nav-right" href="mailto:test@test.com">test@test.com</a>
                 </li>
                 <li> 
-                    <a class="nav-right" href="blank">Github</a>
+                    <a class="nav-right" href="https://github.com/jcm-co" target="_blank">Github</a>
                 </li>
                 <li> 
-                    <a class="nav-right" href="blank">LinkedIn</a>
+                    <a class="nav-right" href="https://www.linkedin.com/in/jcmignon/" target="_blank">LinkedIn</a>
                 </li>
             </ul>
         </nav>
