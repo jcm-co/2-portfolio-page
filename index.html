@@ -11,14 +11,15 @@
 <body>
     <header class="header">
         <h1>Jean-Christophe Mignon</h1>
-        <nav>
+        <nav class="topnav">
+            <!-- make it into a flex container? -->
             <ul>
                 <li> 
                     <!-- # to connect it to a class -->
                     <a href="blank">About Me</a>
                 </li>
                 <li> 
-                    <a href="blank">Work</a>
+                    <a href="blank">My Work</a>
                 </li>
                 <li> 
                     <a href="blank">Contact Me</a>
@@ -30,58 +31,69 @@
         </nav>
     </header>
     
+    <div class="backgroundimg">
+        <h2 class="textbox">"All things are difficult, before they are easy."</h2>
+    </div> 
+
     <main>
-        <div class="backgroundimg">
-            <h2> Inspiring quote</h2>
-        </div> 
+        <section class="nav-section">
+            <aside class="nav-left">
+                <h3>About Me</h3>
+            </aside>
+            
+            <section class="nav-right">
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+            </section>        
+        </section>
 
-        <aside class="sidenav">
-            <h3>About Me</h3>
-        </aside>
-        
-        <figure class="AboutMeText">
-            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
-        </figure>
-        
-        <aside class="sidenav">
-            <h3>Work</h3>
-        </aside>
-        
-        <figure class="prio-project project1">
-            <h4>CSS cheat sheet</h4>
-        </figure> </figure>
-
-        <figure class="non-prio-project project2">
-            <h4>html</h4>
-            <img src="../2-portfolio-page/Assets/Images/html.jpeg" alt="html coding">
-        </figure>
-       
-        <figure class="non-prio-project project3">
-            <h4>CSS</h4>
-        </figure>
-
+        <section class="nav-section">
+            <aside class="nav-left">
+                <h3>My Work</h3>
+            </aside>
+            
+            <div class="nav-right">
+                <figure class="CheatSheet">
+                    <!-- apply to h4 tag, investigate. class="textbox" -->
+                    <h4>CSS cheat sheet</h4>
+                </figure> </figure>
+                <figure class="html">
+                    <!-- apply to h4 tag, investigate. class="textbox" -->
+                    <h4>Intro to HTML</h4>
+                </figure>      
+                <figure class="JavaScript">
+                    <!-- apply to h4 tag, investigate. class="textbox" -->
+                    <h4>Intro to JavaScript</h4>
+                </figure>  
+            </div>
+        </section>
     </main>
 
     <footer>
-        <aside>
-            <p>Contact Me</p>
+        
+        <aside class="nav-left">
+            <h3>Contact Me</h3>
         </aside>
-        <nav>
-            <ul>
-                <li> 
-                    <a href="blank">555.555.555</a>
+        
+<!-- TO DO - put contact details to right of Contact Me section -->
+
+        <nav class="nav-right">
+            <ul class="nav-right">
+                <li class="nav-right"> 
+                    <a class="nav-right" href="blank">555.555.555</a>
                 </li>
                 <li> 
-                    <a href="blank">test@test.com</a>
+                    <a class="nav-right" href="blank">test@test.com</a>
                 </li>
                 <li> 
-                    <a href="blank">Github</a>
+                    <a class="nav-right" href="blank">Github</a>
+                </li>
+                <li> 
+                    <a class="nav-right" href="blank">LinkedIn</a>
                 </li>
             </ul>
         </nav>
 
     </footer>
-
 
 </body>
 </html>

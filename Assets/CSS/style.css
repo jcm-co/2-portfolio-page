@@ -8,11 +8,11 @@
     --dark: rgb(0, 0, 0);
     --light: rgb(82, 78, 78);
     --navlight: rgb(136, 173, 214);
-    --navdark: rgb(60, 67, 75);
+    --navdark: rgb(8, 8, 8);
 }
 
 .header {
-    height: 70px;
+    height: 100px;
     width: 100%;
     font-size: 1.75rem;
     color: var(--navlink);
@@ -22,21 +22,20 @@
 .header h1 {
     display: inline-block;
     min-width: 30%;
-    margin: 15px 0px;
+    margin: 30px 0px;
     padding: 5px;
-    /* how to make margin 10% within the header element */
     text-align: right;
     font-weight: bold;
     background-color: var(--navlight);
     color: var(--navdark);
 }
 
-/* ensure that it does not go to a new line when making the screen smaller - flex wrap?*/
-.header nav {
+/* When using a class "topnav" instead of nav, it breaks. Why? */
+.header nav{
     float: right;
-    margin: 15px;
+    margin: 30px;
+    padding: 5px;
     text-align: right;
-    /* flex-wrap: nowrap; */
 }
 
 .header li {
@@ -44,112 +43,125 @@
     margin-right: 25px;
 }
 
-/* when selecting .header, why does font size not apply to a tag? (b/c of default settings, shouldn't reset sheet take over? */
 .header a {
     color: var(--navlight);
     font-size: 1.75rem;
 }
 
-/* question - how to push image up? */
 .backgroundimg {
     height: 200px;
     width: 100%;
-    margin-bottom: 25px;
-    background-image: url("../Images/financial-blue-flat-business-background-image_194252.jpg");
-    background-size: cover;
+    background-image: url("../Images/mac3.jpg");
     background-position: center;
+    margin-bottom: 10px;
 }
 
-h2 {
+.textbox {
     float: right;
     background-color: var(--navlight);
     color: var(--navdark);
     margin: 150px 20px 20px;
     padding: 10px;
+    font-style: italic;
 }
 
-/* inline-flex to keep a flex container display inline
-.sidemenu {
-    display: inline-block;
-    border-right: var(--navlight) 3px bold;
-}
+/* Flex layout */
 
-.AboutMeText {
-    float: right;} */
+.nav-section {
+    display: flex;
+  }
 
-/* box vanishes when I apply a class (.sidenav), it is accurate when I apply it to the aside notion */
-/* Can you use inline-block and relative together? */
-/* border inline not showing */
-aside{
-    display: inline-block;
-    position: relative;
-    width: 20%;
-    height: 200px;
-    border-right: var(--navdark) 2px solid;
-    padding-right: 5px;
-}
+.nav-left {
+    flex: 30%;
+    padding: 20px;
+    flex-wrap: wrap;
+    border-right: var(--navlight) 4px solid;
+    margin: 10px;
+  }
 
-/* can you make it position:absolute within the aside element? */
-/* is this the right way to manipulate the h3 tag WITHIN the aside element  */
-aside h3 {
-    position: absolute;
-    right: 20px;
-    top: 50px;
+.nav-right {
+    flex: 70%;
+    padding: 20px;
+  } 
+
+  /* More */
+
+.nav-left h3 {
     color: var(--navlight);
     font-size: 1.75rem;
 }
 
-/* Do you have to calculate how much px in between or can this be done automatically (flexbox) */
+/* 
 .AboutMeText{
     display: block;
     float: right;
     width: 80%;
-    height: 200px;
+    height: 150px;
     color: var(--light);
-    padding: 1%;
+    padding: 30px;
 }
 
-/* aside nav needs to move together with work elements  */
-.prio-project{
-    display: block;
-    float: right;
-    width: 80%;
-    height: 200px;
-    border: black 2px solid;
+.MyWork {
+    flex: 30%;
+    height: 800px;
+    padding-right: 5px;
+    margin: 10px 0px;
+    border-right: var(--navlight) 4px solid;
 }
 
-/* spacing around image?, image element inside  */
-.project1{
+.MyWork h3 {
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    color: var(--navlight);
+    font-size: 1.75rem;
+}
+
+.projects{
+    display: 70%;   
+    margin: 2% 5%;
+    border-radius: 15px 50px 30px;
+}
+
+.CheatSheet{
+    display: inline-block;
     height: 200px;
-    width: 80%;
-    float: right;
-    background-image: url("../Images/css_cheat_sheet.jpeg");
+    width: 70%;
+    margin-left: 5%;
+    margin-right: 5%;
+    background-image: url("../Images/CSS_image.jpeg");
     background-size: cover;
     background-position: center;
 }
 
-.non-prio-poject{
-
-}
-
-/* added image in html vs in css */
-.project2{
-    height: 100px;
-    width: 40%;
+.html{
+    display: flex;
     float: right;
-}
-
-.project3{
-    height: 100px;
-    width: 40%;
-    float: right;
-    background-image: url("../Images/css.jpeg");
+    background-image: url("../Images/html.jpeg");
     background-size: cover;
     background-position: center;
 }
 
-/* contact me >> not in line with menu items */
-footer{
-    display: block;
-
+.JavaScript{
+    background-image: url("../Images/html.jpeg");
+    background-size: cover;
+    background-position: center;
 }
+
+
+.footer nav{
+    float: right;
+    margin: 30px;
+    padding: 5px;
+    text-align: right;
+}
+
+.footer li {
+    display: inline-block;
+    margin-right: 25px;
+}
+
+.footer a {
+    color: var(--navlight);
+    font-size: 1.75rem;
+} */
